@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacode Loan Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container center">
+        <main>
+            <div class="card">
+                <form>
+                    <h1 class="app-heading mb-15 mb-13-5" id="app-heading">Bacode Loan Calculator</h1>
+                    <div class="loan-parameters mb-15 mb-13-5 d-flex">
+                        <span class="naira fw-bold center">N</span><input type="number" placeholder="Loan Amount" id="loan-amount" step="any" required>
+                    </div>
+                    <div class="loan-parameters mb-15 mb-13-5 d-flex">
+                        <span class="percent fw-bold center">%</span><input type="number" placeholder="Interest" id="interest" step="any" required>
+                    </div>
+                    <div class="loan-parameters mb-15 mb-13-5 d-flex">
+                        <input type="number" placeholder="Repay Time (Years)" id="repay-time" step="any" required>
+                    </div>
+                    <button type="submit" class="calculate calculate-button cus-p">Calculate</button>
+                </form>
+                <div class="loading-gif center">
+                    <img src="images/loading.gif" alt="loading-image">
+                </div>
+                <div class="loan-results">
+                    <h2 class="result-heading mb-15 mb-13-5">Repayment Plan</h2>
+                    <div class="monthly-payment-section mb-15 mb-13-5 d-flex">
+                        <span class="fw-bold m-payment center">Monthly Payment</span><input type="number" disabled id="monthly-payment" step="any">
+                    </div>
+                    <div class="total-payment-section mb-15 mb-13-5 d-flex">
+                        <span class="fw-bold t-payment center">Total Payment</span><input type="number" disabled id="total-payment" step="any">
+                    </div>
+                    <div class="total-interest-section mb-15 mb-13-5 d-flex">
+                        <span class="fw-bold t-interest center">Total Interest</span><input type="number" disabled id="total-interest" step="any">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright-section">&copy;2023 Bacode Inc.</div>
+        </footer>
+    </div>
+<script src="javascript/app.js"></script>
+</body>
+</html>

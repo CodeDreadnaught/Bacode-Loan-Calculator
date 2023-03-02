@@ -1,0 +1,28 @@
+.d-flex {
+    display: flex;
+}
+.fd-c {
+    flex-direction: column;
+}
+.ai-c {
+    align-items: center;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.center {
+    display: grid;
+    place-items: center;
+}
+.cus-p {
+    cursor: pointer;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}

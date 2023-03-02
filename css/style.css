@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url(utility.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --bacode-gray: #2f4f4f;
+    --bacode-white: #ffff;
+    --bacode-black: #000;
+}
+body {
+    font-family: "Nunito", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    background: var(--bacode-gray);
+}
+.container {
+    padding-top: 40px;
+}
+main {
+    min-height: 87vh;
+}
+.card {
+    background: var(--bacode-white);
+    min-height: 290px;
+    width: 700px;
+    border-radius: 4px;
+    padding: 25px;
+}
+.app-heading {
+    font-size: 1.38em;
+    letter-spacing: 0.010em;
+    text-align: center;
+}
+.loan-parameters {
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 30px;
+}
+.loan-parameters > input {
+    border: none;
+    background: transparent;
+    width: 95%;
+    padding-left: 5px;
+    color: var(--bacode-black);
+    font-family: "Nunito";
+    font-weight: 600;
+}
+.loan-parameters > input:focus {
+    outline: none;
+}
+.loan-parameters > input::placeholder {
+    font-family: "Nunito";
+}
+.loan-parameters > input::-webkit-inner-spin-button, .loan-parameters > input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.naira {
+    text-decoration: line-through;
+}
+.naira, .percent {
+    font-size: 0.85em;
+    width: 3.75%;
+    height: 100%;
+    background: #388585;
+    color: var(--bacode-white);
+}
+button {
+    all: unset;
+}
+.calculate {
+    background: var(--bacode-gray);
+    width: 100%;
+    text-align: center;
+    color: var(--bacode-white);
+    height: 30px;
+    border-radius: 2px;
+}
+.calculate:hover {
+    opacity: 0.95;
+    font-weight: bold;
+}
+footer {
+    color: var(--bacode-white);
+}
+.loan-results, .loading-gif {
+    padding-top: 15px;
+}
+.result-heading {
+    font-size: 1.2em;
+    letter-spacing: 0.010em;
+    text-align: center;
+}
+.monthly-payment-section, .total-payment-section, .total-interest-section {
+    border: 1px solid gray;
+    border-radius: 2px;
+    height: 30px;
+}
+.m-payment, .t-payment, .t-interest {
+    font-size: 0.85em;
+    width: 20%;
+    height: 100%;
+    background: #388585;
+    color: var(--bacode-white);
+}
+.monthly-payment-section > input, .total-payment-section > input, .total-interest-section > input {
+    border: none;
+    background: transparent;
+    width: 80%;
+    padding-left: 5px;
+    color: var(--bacode-black);
+    font-family: "Nunito";
+    font-weight: 600;
+}
+.monthly-payment-section > input:focus, .total-payment-section > input:focus, .total-interest-section > input:focus {
+    outline: none;
+}
+.error-message {
+    height: 50px;
+    border-radius: 2px;
+    background: rgb(158, 85, 97);
+    color: #241f1f;
+}
+.loading-gif, .loan-results {
+    display: none;
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+    }
+    main {
+        min-height: 81.5vh;
+    }
+    .card {
+        min-height: 280px;
+        width: 290px;
+    }
+    .app-heading {
+        font-size: 1.3em;
+    }
+    .naira, .percent {
+        width: 11.5%;
+    }
+    .loan-results, .loading-gif {
+        padding-top: 13.5px;
+    }
+    .result-heading {
+        font-size: 1.12em;
+    }
+    .m-payment, .t-payment, .t-interest {
+        font-size: 0.80em;
+        width: 50%;
+    }
+    .monthly-payment-section > input, .total-payment-section > input, .total-interest-section > input {
+        width: 50%;
+    }
+    .mb-13-5 {
+        margin-bottom: 13.5px;
+    }
+
+}
